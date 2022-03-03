@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  min-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.column {
+  margin: 10px;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.list-style {
+  font-size: 22px;
+  -webkit-transition: color 2s;
+  transition: color 2s;
+}
+
+.list-style:hover {
+  color: green;
+}
+
+.instructions-style {
+  font-size: 20px;
+  color: orange;
+  -webkit-transition: color 2s;
+  transition: color 2s;
+}
+
+.instructions-style:hover {
+  color: cyan;
+  font-size: 160%;
+}
+
+.title-style {
+  color: red;
+  text-align: center;
+  border: 10px solid yellow;
+}
