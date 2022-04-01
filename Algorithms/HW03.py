@@ -63,3 +63,9 @@ stringP = "Everything is hard before it is easy"
 reverse_statement(stringP)
 permutation_string("ABC")
 count_chars("Hello World")
+
+
+
+#hw 03 - from last week's lesson, it's different
+#below the arthithmetic mean
+#two lowest elements
