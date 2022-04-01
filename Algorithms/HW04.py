@@ -28,9 +28,22 @@ def even_first(intArray):
 
 
 
-def increment_num(*args):
-    print(*args)
+def increment_num(decimalIntegerD):
+    #so everything greater then or equal to 10 is auto converted to 0? Is this right?
+
+    print(decimalIntegerD)
+    newArray = []
+    newArray.append(decimalIntegerD[0])
     #still working on this
+    for n in decimalIntegerD[1:]:
+        if n+1 >= 10:
+            n = 0
+            newArray.append(n)
+        else:
+            newArray.append(n)
+    print(newArray)
+    return newArray
+
 
 
 #below are my tests to see if it works:
@@ -43,3 +56,9 @@ numberList = [7, 3, 5, 6, 4, 10, 3, 2]
 even_first(numberList)
 
 
+testInput = [1, 2, 9]
+increment_num(testInput)
+
+
+testInput = [1, 2, 9,19,21,22,1,2,3,4,5,6,7,8,9]
+increment_num(testInput)
