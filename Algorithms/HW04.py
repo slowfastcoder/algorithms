@@ -60,6 +60,46 @@ testInput = [1, 2, 9]
 increment_num(testInput)
 
 
-testInput = [1,2,3,4,5,9,9,99]
-increment_num(testInput)
-increment_num([9,9,9])
+testInput2 = [9, 9, 9]
+increment_num(testInput2)
+
+
+
+#solutions
+
+def even_first(arr):
+    next_even, next_odd = 0, len(arr) -1
+    while next_even < next_odd:
+        if arr[next_even] % 2 == 0:
+            next_even += 1
+        else:
+            arr[next_even], arr[next_odd] = arr[next_odd], arr[next_even]
+            next_odd -= 1
+
+    return arr
+
+test_array = [7, 3, 5, 6, 4, 10, 3, 2]
+print("Even first solutions:")
+print(even_first(test_array))
+
+def plus_one(arr):
+    arr[-1] += 1
+
+    for i in reversed(range(1, len(arr))):
+        if arr[i] != 10:
+            break
+
+        arr[i] = 0
+        arr[i - 1] += 1
+
+    if arr[0] == 10:
+        arr[0] = 1
+        arr.append(0)
+
+    return arr
+
+
+print("plus one solutions:")
+
+print(plus_one(testInput))
+print(plus_one(testInput2))
