@@ -31,7 +31,7 @@ def even_first(intArray):
 def increment_num(decimalIntegerD):
     #so everything greater then or equal to 10 is auto converted to 0? Is this right?
 
-    print(decimalIntegerD)
+    #print(decimalIntegerD)
     newArray = []
     newArray.append(decimalIntegerD[0])
     #still working on this
@@ -40,7 +40,7 @@ def increment_num(decimalIntegerD):
             n = 0
             newArray.append(n)
         else:
-            newArray.append(n)
+            newArray.append(n+1)
     print(newArray)
     return newArray
 
@@ -60,5 +60,6 @@ testInput = [1, 2, 9]
 increment_num(testInput)
 
 
-testInput = [1, 2, 9,19,21,22,1,2,3,4,5,6,7,8,9]
+testInput = [1,2,3,4,5,9,9,99]
 increment_num(testInput)
+increment_num([9,9,9])
