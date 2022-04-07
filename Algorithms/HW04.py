@@ -78,9 +78,9 @@ def even_first(arr):
 
     return arr
 
-test_array = [7, 3, 5, 6, 4, 10, 3, 2]
+
 print("Even first solutions:")
-print(even_first(test_array))
+print(even_first(numberList))
 
 def plus_one(arr):
     arr[-1] += 1
